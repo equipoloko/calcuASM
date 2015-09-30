@@ -36,7 +36,8 @@ INICIO:
   ;cuerpo principal
 
   call clrscr; MACRO
-   
+  
+  ;TODO ESTO ES PARA MOSTRAR EL MENU
   lea dx, menu 
   call mostrar
   lea dx, suma 
@@ -69,6 +70,7 @@ INICIO:
   call mostrar
 
   call espera
+  ; HASTA AQUI
 
   MOV AX,4C00H		;REALIZAMOS LA SALIDA AL DOS
   INT 21H	
